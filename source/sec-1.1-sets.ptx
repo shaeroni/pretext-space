@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-1.1-sets" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Sets</title>
+  
+  <!-- <em> is like \emph -->
+  <p> 
+    Modern mathematics makes heavy use of <em>sets</em>.  
+    A set is an unordered collection of distinct objects.  We won't try and pin
+    it down more than this---our intuition about collections
+    of objects will suffice. 
+  </p>
+  <!-- <fn> replaces \footnote -->
+    <fn> 
+      When you pursue more rigorous math,
+      you rely on definitions to get yourself out of philosophical jams.  For instance,
+      with our definition of set, consider ``the set of all sets that don't
+      contain themselves''.  Such a set cannot exist!
+      This is called <em>Russel's Paradox</em><idx><h>Russel's Paradox</h></idx>, and shows
+      that if we start talking about sets of sets, we may need more than
+      intuition.
+  </fn>
+
+    <p> 
+      We write a set with curly-braces { and } and
+      list the objects inside.  For instance
+    </p>
+    <!-- <me> seems to be similar to \[   \] -->
+    <me>
+        \Set{1,2,3}.
+    </me>
+    
+    <p>
+      This would be read aloud as ``the set containing the elements <m>1</m>, <m>2</m>, and <m>3</m>''.
+      Things in a set are called <em>elements</em> <idx><h>Set</h><h>element of</h></idx> 
+      and the symbol <m>\in</m> <idx><h>Symbols</h><h><m>\in</m></h></idx> 
+      is used to specify that something is an element of a set.
+      In contrast, <m>\notin</m> <idx><h>Symbols</h><h><m>\notin</m></h></idx>
+      is used to specify something is not an element of a set.  For example,
+    </p>
+    <me>
+      3\in\Set{1,2,3}\qquad 4\notin\Set{1,2,3}.
+    </me>
+    
+    <p>... some content omitted ...</p>
+
+</section>

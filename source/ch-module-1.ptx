@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="ch-module-1" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Sets, Vectors and Notation</title>
+
+  <introduction>
+    <p> Basic introduction to sets, vectors, and notation. </p>
+  </introduction>
+
+  <!-- include sections -->
+  <xi:include href="sec-1.1-sets.ptx" />
+  <xi:include href="sec-1.2-ops-on-sets.ptx" />
+
+</chapter>

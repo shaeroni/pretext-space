@@ -15,6 +15,10 @@
   <!-- <appendix> <title>List of Symbols</title> <notation-list/> </appendix> -->
 
   <!-- <index> <title>Index</title> <index-list/> </index> -->
+  <index label="the-index">
+    <title>Index</title>
+    <index-list />
+  </index>
 
   <colophon>
     <p> This book was authored in <pretext />. </p>

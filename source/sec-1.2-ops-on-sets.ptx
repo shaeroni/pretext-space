@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-2.2-ops-on-sets" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Operations on Sets</title>
+  
+  <p> 
+    If the set <m>A</m> contains all the elements that the set <m>B</m> does, we call <m>B</m> a <em>subset</em>
+    of <m>A</m>. Conversely, we call <m>A</m> a <em>superset</em> of <m>B</m>. 
+  </p>
+  <definition xml:id="def-Subset-and-Superset">
+    <!-- there was some notes on <notation> and <usage> tags in here; review
+      later -->
+      <notation>
+        <usage><m>\subseteq, \subset</m></usage>
+        <description><m>B</m> is a <m>\subseteq</m> of <m>A</m></description>
+      </notation>
+    <statement>
+      <p>
+        <term>Subset &amp; Superset.</term> The set <m>B</m> is a <term>subset</term> of the set <m>A</m>, written <m>B \subseteq A</m>, if for all
+        <m>b \in B</m> we also have <m>b \in A</m>.
+        In this case, <m>A</m> is called a <term>superset</term> of <m>B</m>.
+        <fn>
+          Some mathematicians use the symbol <m>\subset</m> instead of <m>\subseteq</m>.
+        </fn>
+      </p>
+    </statement>
+  </definition>
+
+  <p>
+    More text here...
+  </p>
+
+  <definition xml:id="def-">
+    <notation>
+      <usage><m>=</m></usage>
+      <description></description>
+    </notation>
+    <statement>
+      <p> 
+        <term>Set Equality</term>. The sets <m>A</m> and <m>B</m> are <term>equal</term>,
+        written <m>A = B</m>, if <m>A \subseteq B</m> and <m>B \subseteq A</m>
+        
+      </p>
+    </statement>
+  </definition>
+
+  <p>
+    Having a definition of equality to lean on will help us when we need to prove things about sets.
+  </p>
+
+  <example>
+    <title>Proving Set Equality</title>
+      <statement>
+        <p>
+          Let <m>A</m> be the set of numbers that can be expressed
+          as <m>2n</m> for some whole number <m>n</m>, and let <m>B</m> be the
+          set of numbers that can be expressed as <m>m + 1</m> where <m>m</m> is
+          an odd whole number.  We will show <m>A = B</m>.
+        </p>
+        
+        <p>
+          First, let us show <m>A \subseteq B</m>.  If <m>x \in A</m>, then <m>x = 2n</m>
+          for some whole number <m>n</m>.  Therefore 
+          <me>
+            x=2n=2(n-1)+1+1=m+1
+          </me> 
+          
+          where
+          <m>m=2(n-1)+1</m> is, by definition, an odd number.  Thus <m>x \in B</m>,
+          which proves <m>A \subseteq B</m>.
+        </p>
+        
+        <p>
+          Now we will show <m>B \subseteq A</m>.  Let <m>x \in A</m>.  By definition,
+          <m>x=m+1</m> for some odd <m>m</m>. By the definition of oddness, <m>m=2k+1</m>
+          for some whole number <m>k</m>. Thus
+          <md>
+            <mrow>x=m+1\amp=(2k+1)+1=2k+2</mrow>
+            <mrow> \amp =2(k+1)=2n,</mrow>
+          </md>
+
+          where <m>n=k+1</m>, and so <m>x\in A</m>.  Since <m>A\subseteq B</m>
+	        and <m>B\subseteq A</m>, by definition <m>A=B</m>.
+        </p>
+
+      </statement>
+    
+  </example>
+
+</section>
